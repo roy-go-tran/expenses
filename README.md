@@ -7,18 +7,24 @@ Things you may want to cover:
 
 * Ruby version
 
-* System dependencies
+- Ruby version: `ruby 3.3.0`
+- Rails version: `rails 8`
+- Database: `postgresql`
 
-* Configuration
+##  Installation
 
-* Database creation
+- Make sure that you have installed ruby, rails, postgresql and nodejs.
 
-* Database initialization
+- Install correct ruby version for our project: `rbenv local 3.3.0`
 
-* How to run the test suite
+- Install bundler: `gem install bundler`
 
-* Services (job queues, cache servers, search engines, etc.)
+- Install gems: `bundle install`
 
-* Deployment instructions
+- Add database config: create `config/database.yml` file (see example file at `config/database.yml.example`)
 
-* ...
+- Database seed: `rails db:seed`
+
+- Start rails server: `rails s`
+
+- Visit `http://localhost:3000/api/v1/expenses-summary?month=2025-08` and start coding
